@@ -53,12 +53,12 @@ form.addEventListener('submit', (e) => {
     document.getElementById('empCount').innerHTML = empCount;
 
 // DELETE EMPLOYEE
-deleteBtn.addEventListener('click', (e) => {
-    if (confirm('Are you sure you want to delete this employee?')) {
-        table.deleteRow(e.target.parentElement.parentElement.rowIndex);
-        empCount--;
-        document.getElementById('empCount').innerHTML = empCount;
-    }
+    deleteBtn.addEventListener('click', (e) => {
+        if (confirm('Are you sure you want to delete this employee?')) {
+            table.deleteRow(e.target.parentElement.parentElement.rowIndex);
+            empCount--;
+            document.getElementById('empCount').innerHTML = empCount;
+        };
     });
-    
+
 });
